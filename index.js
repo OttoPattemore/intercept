@@ -1,5 +1,5 @@
 function calculateIntercept(line1M,line1C,line2M,line2C){
-    if((line1M-line2M) == 0){
+    if(line1M==line2M){
         return {
             x: NaN,
             y: NaN
@@ -18,11 +18,9 @@ function calculate(){
     const line2M = parseFloat(document.getElementById("l2slope").value);
     const line2C = parseFloat(document.getElementById("l2intercept").value);
     const intercept = calculateIntercept(line1M,line1C,line2M,line2C);
-    const doLinesIntercept = intercept.x != NaN;
+    const noIntersection = isNaN(intercept.x);
 
-
-
-    if(!doLinesIntercept){
+    if(noIntersection){
         document.getElementById("error_message").textContent = "The lines don't intercept!";
         document.getElementById("x_intercept").textContent = "";
         document.getElementById("y_intercept").textContent = "";
