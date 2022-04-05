@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line intersect calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body style="background-color: rgb(31, 31, 31);">
+    <div class="calculator">
+        <div class="inputs">
+            <h2>Inputs</h3>
+            <hr>
+            <h3>Line 1</h3>
+            <input id="l1slope", type="number">Slope</input>
+            <input id="l1intercept"type="number">Y Intercept</input>
+            <hr>
+            <h3>Line 2</h3>
+            <input id="l2slope", type="number">Slope</input>
+            <input id="l2intercept"type="number">Y Intercept</input>
+            <hr>
+            <br><br>
+            <button onclick="calculate()">Calculate!</button>
+        </div>
+        <br>
+        <h3 id="x_intercept"></p>
+        <h3 id="y_intercept"></p>
+        <h3 id="error_message", style="color: red;"></h3>
+    </div>
+</body>
+</html>

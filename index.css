@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.calculator{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+button {
+  background-color: #72a120;
+  border: none;
+  color: white;
+  padding: 15px 16px;
+  font-size: 19px;
+}
